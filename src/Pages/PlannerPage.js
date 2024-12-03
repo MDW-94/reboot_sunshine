@@ -7,11 +7,11 @@ import logo from "../images/lloyds_logo.svg";
 
 const PlannerPage = () => {
   // Task data for the dashboard
-  const tasks = [
-    { id: 1, description: "Pay electricity bill", due: "Due in 2 days" },
-    { id: 2, description: "Doctor's appointment", due: "Tomorrow at 10 AM" },
-    { id: 3, description: "Team meeting", due: "In 3 days at 9 AM" },
-  ];
+  // const tasks = [
+  //   { id: 1, description: "Pay electricity bill", due: "Due in 2 days" },
+  //   { id: 2, description: "Doctor's appointment", due: "Tomorrow at 10 AM" },
+  //   { id: 3, description: "Team meeting", due: "In 3 days at 9 AM" },
+  // ];
 
   return (
     <div>
@@ -20,7 +20,7 @@ const PlannerPage = () => {
 
       {/* Hero Section */}
       <header className="hero">
-        <img src={logo}></img>
+        <img src={logo} alt="lbg black horse"></img>
         <div>
           <h2>Planner</h2>
           <p>Welcome to your Planner!</p>
