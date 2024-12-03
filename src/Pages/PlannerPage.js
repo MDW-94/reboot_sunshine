@@ -1,5 +1,6 @@
 import React from "react";
 import "./PlannerPage.style.css"; // Ensure this CSS file is properly linked for styling
+import Scheduler from "../Components/Scheduler";
 
 const PlannerPage = () => {
   // Task data for the dashboard
@@ -36,24 +37,7 @@ const PlannerPage = () => {
       <section className="dashboard">
         <h2>Your Dashboard</h2>
 
-        {/* Task List */}
-        <div className="task-list">
-          <h3>Upcoming Tasks</h3>
-          <ul>
-            {tasks.map((task) => (
-              <li key={task.id} className="task-item">
-                <div className="task-description">{task.description}</div>
-                <div className="task-due">{task.due}</div>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        {/* Stats or additional info can go here */}
-        <div className="additional-info">
-          <h3>Stats</h3>
-          <p>Total tasks: {tasks.length}</p>
-        </div>
+        <Scheduler />
       </section>
 
       {/* Footer */}

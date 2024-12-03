@@ -1,6 +1,13 @@
 /* HomePage.css */
 .homepage-container {
   font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
   margin: 0;
   padding: 0;
   background-color: #f4f4f9;
@@ -41,7 +48,7 @@
 /* Hero Section */
 .hero {
   text-align: center;
-  background-color: #006A4D;
+  background-color: #006a4d;
   color: white;
   padding: 50px 0;
 }
@@ -60,7 +67,7 @@
   padding: 10px 20px;
   font-size: 1.2em;
   background-color: #fff;
-  color: #006A4D;
+  color: #006a4d;
   border: none;
   cursor: pointer;
   border-radius: 5px;
@@ -135,6 +142,7 @@
 .footer {
   text-align: center;
   background-color: #333;
+  box-sizing: border-box;
   color: white;
   padding: 10px 0;
   position: fixed;
