@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar from "../Components/Navbar";
 import "./PlannerPage.style.css"; // Ensure this CSS file is properly linked for styling
 import Scheduler from "../Components/Scheduler";
 
@@ -11,21 +12,9 @@ const PlannerPage = () => {
   ];
 
   return (
-    <div className="c-planner-layout">
+    <div>
       {/* Navbar */}
-      <nav className="navbar">
-        <a href="/" className="logo">
-          Smart Planner
-        </a>
-        <ul className="nav-links">
-          <li>
-            <a href="/dashboard">Dashboard</a>
-          </li>
-          <li>
-            <a href="/planner">Planner</a>
-          </li>
-        </ul>
-      </nav>
+      <Navbar />
 
       {/* Hero Section */}
       <header className="hero">
