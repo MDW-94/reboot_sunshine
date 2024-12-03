@@ -1,0 +1,109 @@
+.c-planner-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+
+  width: inherit;
+  height: inherit;
+}
+
+/* Nav Bar */
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0078d7;
+  padding: 10px 20px;
+}
+
+.navbar .logo {
+  margin-left: 8px;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav-links li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  font-size: 1em;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #d1e7ff;
+}
+
+/* Hero Section */
+
+header {
+  width: 100%;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: green;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: whitesmoke;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #0078d7;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #005bb5;
+}
+
+/* Task Preview */
+.task-preview {
+  padding: 20px;
+  text-align: center;
+}
+
+.task-preview h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.task-preview ul li {
+  margin: 10px 0;
+  font-size: 1.1em;
+  color: #555;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
