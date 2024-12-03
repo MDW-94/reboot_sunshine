@@ -19,7 +19,7 @@ const PlannerPage = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <header className="hero">
+      <header className="hero1">
         <img src={logo}></img>
         <div>
           <h2>Planner</h2>
@@ -28,7 +28,7 @@ const PlannerPage = () => {
       </header>
 
       {/* Dashboard Section */}
-      <section className="dashboard">
+      <section className="dashboard1">
         {/* <h2>Calendar</h2> */}
 
         <Scheduler />
