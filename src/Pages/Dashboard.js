@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
+import { Link } from "react-router-dom";
 import "./Dashboard.style.css"; // Ensure this CSS file is properly linked for styling
 
 const HomePage = () => {
@@ -17,11 +18,13 @@ const HomePage = () => {
       {/* Hero Section */}
       <header className="hero">
         <h1>Welcome to Smart Planner</h1>
-        <p>
+        <p className="hero-p">
           Plan smarter, live better. Stay organized with your personalized
           tasks.
-        </p>
-        <button className="cta-button">Get Started</button>
+        </p>{" "}
+        <Link className="cta-button" to="/planner">
+          Get Started
+        </Link>
       </header>
       {/* Dashboard Section */}
       <section className="dashboard">
