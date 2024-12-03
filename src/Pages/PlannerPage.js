@@ -3,6 +3,8 @@ import Navbar from "../Components/Navbar";
 import "./PlannerPage.style.css"; // Ensure this CSS file is properly linked for styling
 import Scheduler from "../Components/Scheduler";
 
+import logo from "../images/lloyds_logo.svg";
+
 const PlannerPage = () => {
   // Task data for the dashboard
   const tasks = [
@@ -18,13 +20,16 @@ const PlannerPage = () => {
 
       {/* Hero Section */}
       <header className="hero">
-        <h1>Planner</h1>
-        <p>Welcome to your Planner!</p>
+        <img src={logo}></img>
+        <div>
+          <h2>Planner</h2>
+          <p>Welcome to your Planner!</p>
+        </div>
       </header>
 
       {/* Dashboard Section */}
       <section className="dashboard">
-        <h2>Your Dashboard</h2>
+        {/* <h2>Calendar</h2> */}
 
         <Scheduler />
       </section>

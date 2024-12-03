@@ -1,7 +1,8 @@
 /* Hero Section */
 .hero {
   text-align: center;
-  background-color: #006a4d;
+  background-color: rgb(18, 181, 122);
+  /* background-color: black; */
   color: white;
   padding: 50px 0;
 }
