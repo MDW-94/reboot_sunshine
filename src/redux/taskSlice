@@ -1,0 +1,16 @@
+import { createSlice } from '@reduxjs/toolkit';
+
+// Initial state
+const initialState = {
+  tasks: [], // You can leave this empty for now
+};
+
+// Create the slice
+const taskSlice = createSlice({
+  name: 'tasks',
+  initialState,
+  reducers: {}, // No reducers needed for now
+});
+
+// Export the reducer as the default export
+export default taskSlice.reducer;
