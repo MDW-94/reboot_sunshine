@@ -1,8 +1,12 @@
-import React from 'react';
+import React from "react";
+
+import Navbar from "../Components/Navbar";
 
 const Planner = () => {
+  const createCalendar = () => {};
+
   return (
-    <div>
+    <div className="c-planner-layout">
       <h1>Planner</h1>
       <p>Welcome to your Planner!</p>
       <p>Here’s what’s coming up:</p>
