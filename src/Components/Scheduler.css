@@ -21,23 +21,32 @@
   width: 100%;
 }
 
+.c-set-task > input {
+  gap: 4px;
+}
+
 .c-task-container {
   display: flex;
   justify-content: space-between;
   width: 100%;
   gap: 8px;
-  padding: 4px;
+  /* padding: 4px; */
   margin: 0px;
   text-align: left;
   /* border: solid 2px black; */
-  border-radius: 16px;
+  border-radius: 16px 16px 16px 16px;
   background-color: rgb(18, 181, 122);
   color: black;
 }
 
+.c-task-header {
+  padding: 4px;
+  margin-left: 8px;
+}
+
 .c-task-button {
-  border-radius: 16px;
-  /* padding: 8px; */
+  border-radius: 0px 16px 16px 0px;
+  font-size: large;
   margin: 0;
   width: 25%;
   background-color: rgb(20, 20, 20);

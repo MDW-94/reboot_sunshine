@@ -2,7 +2,6 @@
 .hero {
   text-align: center;
   background-color: rgb(18, 181, 122);
-  /* background-color: black; */
   color: white;
   padding: 50px 0;
 }
@@ -17,8 +16,13 @@
   margin-bottom: 20px;
 }
 
+.hero-p {
+  color: white;
+}
+
 .cta-button {
   padding: 10px 20px;
+  text-decoration: none;
   font-size: 1.2em;
   background-color: #fff;
   color: #006a4d;

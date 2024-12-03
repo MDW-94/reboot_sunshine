@@ -5,41 +5,61 @@ import "./Scheduler.css";
 
 const Scheduler = () => {
   const [selectedDate, setSelectedDate] = useState(new Date());
-  const [currentTasks] = useState([
+  const [form, setForm] = useState({
+    task: "",
+    note: "",
+  });
+
+  const [currentTasks, setCurrentTasks] = useState([
     {
-      id: 0,
-      taskName: "Monthly Magazine Subscription",
-      due: "04/12/24",
+      task: "Monthly Magazine Subscription",
+      due: new Date(),
       time: "1515",
     },
     {
-      id: 1,
-      taskName: "Gym Membership",
-      due: "05/12/24",
+      task: "Gym Membership",
+      due: new Date(),
       time: "1730",
     },
     {
-      id: 2,
-      taskName: "Pay Day",
-      due: "07/12/24",
+      task: "Pay Day",
+      due: new Date(),
       time: "1800",
     },
   ]);
 
-  const displayTask = currentTasks.map((task) => {
+  const focusedTasks = currentTasks.filter(
+    (item) => item.due.toDateString() === selectedDate.toDateString()
+  );
+
+  const displayTask = focusedTasks.map((item) => {
     return (
-      <div className="c-task-container">
-        <h4 className="c-task-header">
-          {task.taskName} <br /> {task.due} <br /> {task.time}
-        </h4>
+      <div className="c-task-container" key={item.task}>
+        <div className="c-task-header">
+          <h4>{item.task}</h4>
+          <p>{item.due.toLocaleDateString()}</p>
+          <p>{item.time}</p>
+        </div>
         <button className="c-task-button">Done</button>
       </div>
     );
   });
 
-  // const createNewTask = () => {
-  //   return currentTasks;
-  // };
+  const createNewTask = (event) => {
+    event.preventDefault();
+    setCurrentTasks([
+      ...currentTasks,
+      {
+        ...form,
+        due: selectedDate,
+      },
+    ]);
+    setForm({ task: "", note: "" });
+  };
+
+  const handleChange = (event) => {
+    setForm({ ...form, [event.target.name]: event.target.value });
+  };
 
   return (
     <div>
@@ -53,12 +73,31 @@ const Scheduler = () => {
         {selectedDate && (
           <div className="c-tasks">
             <h3> Set A Task For: {selectedDate.toDateString()}</h3>
-            <div className="c-set-task">
-              <input placeholder="No."></input>
-              <input placeholder="Task"></input>
-              <input placeholder="Time"></input>
-              <input placeholder="Note"></input>
-            </div>
+            <form className="c-set-task">
+              <input
+                name="task"
+                placeholder="Task"
+                value={form.task}
+                onChange={handleChange}
+                required
+              ></input>
+              {/* <input
+                name="due"
+                placeholder="Due date"
+                value={form.due}
+                onChange={handleChange}
+                required
+              ></input> */}
+              <input
+                name="note"
+                placeholder="Note"
+                value={form.note}
+                onChange={handleChange}
+              ></input>
+              <button onClick={createNewTask} type="submit">
+                Submit
+              </button>
+            </form>
             {displayTask}
           </div>
         )}
