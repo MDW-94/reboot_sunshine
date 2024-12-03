@@ -41,7 +41,7 @@
 /* Hero Section */
 .hero {
   text-align: center;
-  background-color: #4CAF50;
+  background-color: #006A4D;
   color: white;
   padding: 50px 0;
 }
@@ -60,7 +60,7 @@
   padding: 10px 20px;
   font-size: 1.2em;
   background-color: #fff;
-  color: #4CAF50;
+  color: #006A4D;
   border: none;
   cursor: pointer;
   border-radius: 5px;
