@@ -5,7 +5,7 @@ import "./Scheduler.css";
 
 const Scheduler = () => {
   const [selectedDate, setSelectedDate] = useState(new Date());
-  const [currentTasks, setCurrentTasks] = useState([
+  const [currentTasks] = useState([
     {
       id: 0,
       taskName: "Monthly Magazine Subscription",
@@ -37,9 +37,9 @@ const Scheduler = () => {
     );
   });
 
-  const createNewTask = () => {
-    return currentTasks;
-  };
+  // const createNewTask = () => {
+  //   return currentTasks;
+  // };
 
   return (
     <div>
