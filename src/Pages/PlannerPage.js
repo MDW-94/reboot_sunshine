@@ -28,7 +28,7 @@ const PlannerPage = () => {
       </header>
 
       {/* Dashboard Section */}
-      <section className="dashboard">
+      <section className="dashboard1">
         {/* <h2>Calendar</h2> */}
 
         <Scheduler />

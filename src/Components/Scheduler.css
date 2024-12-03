@@ -1,0 +1,46 @@
+.c-calendar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.c-tasks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.c-set-task {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 8px;
+  width: 100%;
+}
+
+.c-task-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 8px;
+  padding: 4px;
+  margin: 0px;
+  text-align: left;
+  /* border: solid 2px black; */
+  border-radius: 16px;
+  background-color: rgb(18, 181, 122);
+  color: black;
+}
+
+.c-task-button {
+  border-radius: 16px;
+  /* padding: 8px; */
+  margin: 0;
+  width: 25%;
+  background-color: rgb(20, 20, 20);
+  color: whitesmoke;
+  border: none;
+}

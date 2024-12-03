@@ -32,8 +32,12 @@
 }
 
 /* Dashboard Section */
-.dashboard {
+.dashboard1 {
   padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
   background-color: #fff;
   margin: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
