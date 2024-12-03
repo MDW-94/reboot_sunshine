@@ -20,7 +20,7 @@ const PlannerPage = () => {
 
       {/* Hero Section */}
       <header className="hero">
-        <img src={logo} alt="lbg black horse"></img>
+        <img src={logo} width={120} alt="lbg black horse"></img>
         <div>
           <h2>Planner</h2>
           <p>Welcome to your Planner!</p>
